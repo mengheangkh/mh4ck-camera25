@@ -1,2 +1,121 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# PHP
+*.php text eol=lf
+
+# JavaScript
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+
+# CSS
+*.css text eol=lf
+
+# HTML
+*.html text eol=lf
+*.htm text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Configuration files
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.ini text eol=lf
+*.conf text eol=lf
+
+# Markdown and documentation
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Image files - binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf
+*.webp binary
+*.bmp binary
+
+# Audio files - binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.m4a binary
+
+# Video files - binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mkv binary
+
+# Font files - binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+
+# Archive files - binary
+*.zip binary
+*.tar.gz binary
+*.tgz binary
+*.rar binary
+*.7z binary
+
+# Database files - binary
+*.sqlite binary
+*.db binary
+
+# Log files
+*.log text eol=lf
+
+# Lock files
+package-lock.json -diff
+yarn.lock -diff
+composer.lock -diff
+
+# Specific project files
+/mh4ck-camera.sh text eol=lf
+/install.sh text eol=lf chmod=755
+
+# lib directory scripts
+/lib/*.sh text eol=lf chmod=755
+
+# Sites directory
+/.sites/**/*.html text eol=lf
+/.sites/**/*.php text eol=lf
+/.sites/**/*.css text eol=lf
+/.sites/**/*.js text eol=lf
+
+# Data files
+*.txt text eol=lf
+*.log text eol=lf
+map.txt text eol=lf
+latest_map.txt text eol=lf
+
+# Location data - treat as text but don't diff by default
+/locations/*.json text eol=lf -diff
+location_log.log text eol=lf -diff
+
+# Git files
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Linguist overrides (for GitHub language detection)
+*.js linguist-language=JavaScript
+*.php linguist-language=PHP
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+*.sh linguist-language=Shell
+
+# Mark files as generated (if applicable)
+/sites/**/*.min.js linguist-generated=true
+/sites/**/*.min.css linguist-generated=true
