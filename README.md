@@ -22,7 +22,7 @@
 
 <br/>
 
-**Developed by [@mengheng25](https://github.com/mengheangkh) — For educational & authorized penetration testing only.**
+**Developed by [@mengheng25](t.me/mengheang25) — For educational & authorized penetration testing only.**
 
 </div>
 
@@ -42,11 +42,28 @@
 | Feature | Description |
 |---|---|
 | 📷 **Silent Camera Capture** | Captures images from the target's front camera via browser's `getUserMedia` API |
+| 📍 **GPS Location Tracking** | Silently captures victim's precise GPS coordinates (latitude, longitude, accuracy) |
 | 🌐 **Cloudflare Tunnel** | Instantly generates a public HTTPS link — no port forwarding needed |
 | 🎭 **5 Lure Templates** | YouTube Live, Birthday Wish, Secret Message, Fake Instagram, AI Chatbot |
 | 📍 **IP & UA Logging** | Logs victim's IP address and browser user-agent on link open |
+| 🗺️ **Google Maps Integration** | Automatically generates Google Maps links from captured coordinates |
+| 📊 **Multi-Format Storage** | Saves location data in TXT, JSON, and Map Link formats for easy viewing |
 | 🔧 **Auto Dependency Install** | Detects and installs missing tools automatically on first run |
 | 🖥️ **Cross-Distro Support** | Kali Linux, Parrot OS, Ubuntu, macOS — auto-detects OS and architecture |
+
+---
+
+## 📍 **Location Tracking Details**
+
+| Feature | Description |
+|---|---|
+| 🎯 **High Accuracy Mode** | Uses GPS with `enableHighAccuracy: true` for precise location (±5-10 meters) |
+| ⏱️ **One-Time Capture** | Captures location only once per visitor to avoid detection |
+| 🗃️ **Auto Archive** | Automatically creates `/locations` folder with timestamped JSON files |
+| 🔗 **Live Map Preview** | Generates clickable Google Maps links for each captured location |
+| 📋 **Location Log** | Maintains `map.txt` with complete location history and accuracy |
+| 🎨 **Viewer Interface** | Beautiful `view_location.php` dashboard to visualize all captured locations |
+| 🌍 **Cross-Browser Support** | Works on Chrome, Firefox, Safari, Edge, and mobile browsers |
 
 ---
 
